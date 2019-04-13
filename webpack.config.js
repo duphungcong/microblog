@@ -2,11 +2,10 @@ const path = require('path');
 
 
 module.exports = {
-    entry: {
-        style: './app/static/src/scss/all.scss'
-    },
+    mode: 'development',
+    entry: './app/static/src/main.js',
     output: {
-        filename: '[name].bundle.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, './app/static/dist'),
         publicPath: '/static/dist',
     },
