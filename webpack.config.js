@@ -13,7 +13,7 @@ module.exports = {
         contentBase: path.join(__dirname, './app/'),
         publicPath: '/static/dist/',
         watchContentBase: true,
-        port: 9000,
+        port: 9001,
         proxy: {
             '!(/static/dist/**/**.*)': {
                 target: 'http://127.0.0.1:5000',
